@@ -40,17 +40,17 @@ custom_minimum_size = Vector2(0, 648)
 [node name="CreditsLabel" parent="ScrollContainer/VBoxContainer" index="1"]
 texture_filter = 1
 custom_minimum_size = Vector2(1152, 0)
-text = "[center][font_size=48]Parallax[/font_size]
+text = "[center][font_size=48]Parallax[/font_size]
 
 
 
 
-[font_size=32]Developed By[/font_size]
+[font_size=32]Developed By[/font_size]
 David Sepúlveda  
 Jaden Ogunleye  
 
 
-[font_size=32]Artwork By[/font_size]
+[font_size=32]Artwork By[/font_size]
 Sophia Lorin Tumulak  
 
 
@@ -81,7 +81,7 @@ Sophia Lorin Tumulak
 
 
 
-[font_size=32]Made With Passion by Students[/font_size]
+[font_size=32]Made With Passion by Students[/font_size]
 [/center]"
 
 [node name="FooterSpace" parent="ScrollContainer/VBoxContainer" index="2"]

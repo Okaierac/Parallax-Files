@@ -35,3 +35,6 @@ func _physics_process( delta ):
 		animated_sprite_2d.animation = "running"
 	else:
 		animated_sprite_2d.animation = "default"
+	
+	if DialogueGlobal.said_no:
+		get_tree().change_scene_to_file("res://addons/maaacks_credits_scene/examples/scenes/end_credits/end_credits.tscn")

@@ -1,1 +1,10 @@
+res://Scenes/topdown_main.tscn
+res://dialogues/Dialogue_Global.gd
+res://Player/Scripts/player_topdown.gd
 res://Scenes/main.tscn
+res://Main_Menu/main_menu.tscn
+res://Scenes/settings.tscn
+res://Scenes/side_main.tscn
+res://Game Over/Game_Over.tscn
+res://addons/maaacks_credits_scene/examples/scenes/end_credits/end_credits.tscn
+res://Scenes/static_body_2d.tscn

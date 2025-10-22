@@ -1,10 +1,12 @@
 ~ start
+set DialogueGlobal.said_no = false
 Wizard: [[Hi|Hello|Sup]]
 Wizard: There has been sightings of bewitched knights.
 Wizard: Could you take care of them for me?
 - Yes. => yes
 - No.
 	MC: No.
+	set DialogueGlobal.said_no = true
 - End the conversation.
 => END
 
