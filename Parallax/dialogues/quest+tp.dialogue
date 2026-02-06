@@ -1,5 +1,4 @@
 ~ start
-set DialogueGlobal.said_no = false
 Wizard: [[Hi|Hello|Sup]]
 Wizard: There has been sightings of bewitched knights.
 Wizard: Could you take care of them for me?
