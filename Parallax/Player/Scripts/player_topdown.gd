@@ -2,18 +2,17 @@ class_name player_topdown extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var sprite_2d: Sprite2D = $Sprite2D
-
 var move_speed : float = 400.0
 var isFlipped = false  # Keep track of the flip state
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	DialogueGlobal.said_no = false
+	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process( delta ):
-	print(DialogueGlobal.said_no)
+	
 	var direction : Vector2 = Vector2.ZERO
 	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")
 	direction.y = Input.get_action_strength("down") - Input.get_action_strength("up")
