@@ -12,7 +12,11 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process( delta ):
+<<<<<<< HEAD
 	
+=======
+	print(DialogueGlobal.said_no)
+>>>>>>> parent of b5ed63e (Commented out the debug print.)
 	var direction : Vector2 = Vector2.ZERO
 	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")
 	direction.y = Input.get_action_strength("down") - Input.get_action_strength("up")
