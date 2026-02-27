@@ -5,7 +5,6 @@ Wizard: Could you take care of them for me?
 - Yes. => yes
 - No.
 	MC: No.
-	set DialogueGlobal.said_no = true
 - End the conversation.
 => END
 
