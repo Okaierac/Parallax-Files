@@ -5,13 +5,13 @@ extends CharacterBody2D
 var interacted = false
 
 func _ready() -> void:
+	GlobalVar.agreed_tutorial = 0
 	interactable.interact = _on_interact
 
 func _on_interact():
 	if not interacted:
 		DialogueManager.show_example_dialogue_balloon(load("res://dialogues/quest+tp.dialogue"), "start")
 	interacted = true
-	GlobalVar.TalkedtoWizard = 2
 	timer.start()
 	return
 

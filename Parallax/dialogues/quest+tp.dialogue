@@ -5,6 +5,7 @@ Wizard: Could you take care of them for me?
 - Yes. => yes
 - No.
 	MC: No.
+	do get_tree().change_scene_to_file("res://addons/maaacks_credits_scene/examples/scenes/end_credits/end_credits.tscn")
 - End the conversation.
 => END
 
@@ -13,4 +14,5 @@ MC: Yes.
 Wizard: Thank you.
 Wizard: I wish you luck young warrior.
 Go to Jeff he will take you there
+do GlobalVar.agreed_tutorial = 1
 => END

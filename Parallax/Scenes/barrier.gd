@@ -7,13 +7,14 @@ var interacted := false
 @onready var timer: Timer = $Timer
 
 func _ready() -> void:
+	GlobalVar.agreed_tutorial = 0
 	interactable.interact = _on_interact
 
 func _on_interact():
 	if not interacted:
-		if GlobalVar.TalkedtoWizard == 2:
+		if GlobalVar.agreed_tutorial == 1:
 			queue_free()
-		elif GlobalVar.TalkedtoWizard == 3:
+		elif GlobalVar.agreed_tutorial == 0:
 			DialogueManager.show_example_dialogue_balloon(load("res://dialogues/Go TO WIzard.dialogue"), "start")
 		interacted = true
 		timer.start()

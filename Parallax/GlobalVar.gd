@@ -7,4 +7,4 @@ var Is_player_flipped = false
 var QuestID = "None"
 var quest_started = false
 var Enemies_Killed = 0
-var TalkedtoWizard = 3
+var agreed_tutorial = 0
