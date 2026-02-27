@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bhr3c3aqpns03" path="res://Enemies/Penemies/penemy_knight_3.tscn" id="6_538bk"]
 [ext_resource type="PackedScene" uid="uid://c0341i3pbuh4c" path="res://Scenes/static_body_2d.tscn" id="7_7bkn6"]
 [ext_resource type="PackedScene" uid="uid://denuoh6sdtgop" path="res://Enemies/Penemies/penemy_knight_4.tscn" id="7_q64sb"]
-[ext_resource type="PackedScene" uid="uid://b0lkv7ias55sf" path="res://CHest.tscn" id="8_5uqfc"]
+[ext_resource type="PackedScene" uid="uid://b0lkv7ias55sf" path="res://Chest.tscn" id="8_5uqfc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_b2rr7"]
 texture = ExtResource("3_fvvwl")

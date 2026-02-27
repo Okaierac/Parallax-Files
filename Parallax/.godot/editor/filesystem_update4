@@ -1,12 +1,8 @@
+res://Scenes/topdown_main.tscn
+res://GlobalVar.gd
 res://Scenes/main.tscn
 res://Main_Menu/main_menu.tscn
 res://Scenes/settings.tscn
-res://Scenes/topdown_main.tscn
 res://Scenes/side_main.tscn
 res://Game Over/Game_Over.tscn
 res://addons/maaacks_credits_scene/examples/scenes/end_credits/end_credits.tscn
-res://Player/Scripts/player_topdown.gd
-res://Npcs/test_npc.tscn
-res://GlobalVar.gd
-res://Npcs/tp_npc.gd
-res://Scenes/barrier.gd
