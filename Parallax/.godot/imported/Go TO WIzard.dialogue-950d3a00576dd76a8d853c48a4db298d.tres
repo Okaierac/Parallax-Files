@@ -1,9 +1,9 @@
-[gd_resource type="Resource" script_class="DialogueResource" load_steps=2 format=3]
+[gd_resource type="Resource" script_class="DialogueResource" format=3]
 
-[ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_6d6w1"]
+[ext_resource type="Script" uid="uid://dbs4435dsf3ry" path="res://addons/dialogue_manager/dialogue_resource.gd" id="1_fuvad"]
 
 [resource]
-script = ExtResource("1_6d6w1")
+script = ExtResource("1_fuvad")
 using_states = PackedStringArray()
 titles = {
 "start": "1"
@@ -12,44 +12,44 @@ character_names = PackedStringArray("Talking Wall")
 first_title = "0"
 lines = {
 "0": {
-"id": "0",
-"next_id": "1",
-"type": "title"
+&"id": "0",
+&"next_id": "1",
+&"type": "title"
 },
 "1": {
-"character": "Talking Wall",
-"id": "1",
-"next_id": "2",
-"text": "Yes, I am a talking wall.",
-"type": "dialogue"
+&"character": "Talking Wall",
+&"id": "1",
+&"next_id": "2",
+&"text": "Yes, I am a talking wall.",
+&"type": "dialogue"
 },
 "2": {
-"character": "Talking Wall",
-"id": "2",
-"next_id": "3",
-"text": "Deal with it.",
-"type": "dialogue"
+&"character": "Talking Wall",
+&"id": "2",
+&"next_id": "3",
+&"text": "Deal with it.",
+&"type": "dialogue"
 },
 "3": {
-"character": "Talking Wall",
-"id": "3",
-"next_id": "4",
-"text": "Anyways, go talk to the wizard before i can let you through.",
-"type": "dialogue"
+&"character": "Talking Wall",
+&"id": "3",
+&"next_id": "4",
+&"text": "Anyways, go talk to the wizard before i can let you through.",
+&"type": "dialogue"
 },
 "4": {
-"id": "4",
-"is_snippet": false,
-"next_id": "end",
-"next_id_after": "",
-"type": "goto"
+&"id": "4",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
 },
 "5": {
-"id": "5",
-"is_snippet": false,
-"next_id": "end",
-"next_id_after": "",
-"type": "goto"
+&"id": "5",
+&"is_snippet": false,
+&"next_id": "end",
+&"next_id_after": "",
+&"type": "goto"
 }
 }
 raw_text = "~ start
