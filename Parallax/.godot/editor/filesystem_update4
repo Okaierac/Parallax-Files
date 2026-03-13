@@ -1,1 +1,7 @@
-res://Scenes/topdown_main.tscn
+res://Enemies/enemy_bullet.tscn
+res://Enemies and traps/penemy_knight.gd
+res://Enemies/enemy_bullet.gd
+res://Enemies and traps/penemy_knight.tscn
+res://Enemies and traps/enemy_bullet.tscn
+res://Scenes/side_main.tscn
+res://Player/player_side.tscn

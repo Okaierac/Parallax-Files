@@ -1,15 +1,16 @@
-res://Interaction components
-res://Scenes
-res://Npcs
-res://Enemies/Penemies
-res://Floor/Platformer
-res://Player/Sprites/S_Placeholders
+res://Enemies/
+res://Enemies and traps/
+res://Interaction components/
+res://Scenes/
+res://Npcs/
+res://Enemies/Penemies/
+res://Floor/Platformer/
+res://Player/Sprites/S_Placeholders/
 res://
-res://Chests/Items/Coin
-res://Side Characters/Sprites
-res://Enemies and traps
-res://Chests
-res://Background
-res://Fonts/Glitch Font
-res://Main_Menu
-res://Player/Scripts
+res://Chests/Items/Coin/
+res://Side Characters/Sprites/
+res://Chests/
+res://Background/
+res://Fonts/Glitch Font/
+res://Main_Menu/
+res://Player/Scripts/

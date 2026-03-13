@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dvg4bgjqebf2t"]
+
+[ext_resource type="Script" uid="uid://h27u2c5hefi8" path="res://Enemies/enemy_bullet.gd" id="1_o2vgy"]
+[ext_resource type="Texture2D" uid="uid://4ko2kdknp8xj" path="res://Enemies/Bullet-Sprite.png.png" id="2_jt57p"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uh1pw"]
+radius = 11.045361
+
+[node name="EnemyBullet" type="CharacterBody2D" unique_id=376883485]
+script = ExtResource("1_o2vgy")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1041435166]
+texture = ExtResource("2_jt57p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2014553419]
+light_mask = 0
+shape = SubResource("CircleShape2D_uh1pw")
+
+[node name="Timer" type="Timer" parent="." unique_id=1683225615]

@@ -1,20 +1,20 @@
-[gd_scene load_steps=49 format=3 uid="uid://d0g482o7qfegi"]
+[gd_scene format=3 uid="uid://d0g482o7qfegi"]
 
-[ext_resource type="Script" path="res://Player/Scripts/player_side.gd" id="1_nwayo"]
+[ext_resource type="Script" uid="uid://dqu0h6xi2pv5m" path="res://Player/Scripts/player_side.gd" id="1_nwayo"]
 [ext_resource type="Texture2D" uid="uid://b5cihxyv02720" path="res://Player/Sprites/S_Placeholders/Idle (32x32).png" id="2_1t5hl"]
 [ext_resource type="Texture2D" uid="uid://ciivm7nt3fvir" path="res://Player/Sprites/S_Placeholders/Jump (32x32).png" id="3_g3p7t"]
 [ext_resource type="Texture2D" uid="uid://b8qoomrbdlvaj" path="res://Player/Sprites/S_Placeholders/Run (32x32).png" id="4_n2gwm"]
 [ext_resource type="Texture2D" uid="uid://b5pv1830u4jou" path="res://Chests/Items/Health/HP_spreadsheet.png" id="5_ssbcy"]
-[ext_resource type="Script" path="res://Player/animated_sprite_2d.gd" id="6_ica5r"]
-[ext_resource type="Script" path="res://Player/hitbox_r.gd" id="7_oee3r"]
-[ext_resource type="Script" path="res://Player/hitbox_l.gd" id="8_b6ovo"]
+[ext_resource type="Script" uid="uid://djbp2u1u5ho0i" path="res://Player/animated_sprite_2d.gd" id="6_ica5r"]
+[ext_resource type="Script" uid="uid://bi2aypjthn1nu" path="res://Player/hitbox_r.gd" id="7_oee3r"]
+[ext_resource type="Script" uid="uid://dpuhxl7h2130a" path="res://Player/hitbox_l.gd" id="8_b6ovo"]
 [ext_resource type="PackedScene" uid="uid://c7y4vl1gwhaga" path="res://Interaction components/interaction_component.tscn" id="9_yhub3"]
 [ext_resource type="Texture2D" uid="uid://dhnm0w4u8ue1e" path="res://Chests/Items/Coin/Coin Icon.png" id="10_qvnvs"]
-[ext_resource type="Script" path="res://Player/Coin_display.gd" id="11_00o70"]
+[ext_resource type="Script" uid="uid://dtyuus5d83f7d" path="res://Player/Coin_display.gd" id="11_00o70"]
 [ext_resource type="Texture2D" uid="uid://c70ejlikdqwl0" path="res://Main_Menu/Graphics/Sprint Boot image.png" id="12_qno0w"]
 [ext_resource type="Texture2D" uid="uid://bk73x6o1ec1ah" path="res://Main_Menu/Graphics/Sprint Button Background image.png" id="13_pip2c"]
-[ext_resource type="Script" path="res://Player/dash_cooldown_bar.gd" id="14_oh8cp"]
-[ext_resource type="Script" path="res://Player/attack_cooldown_bar.gd" id="15_xwb51"]
+[ext_resource type="Script" uid="uid://csc1ecx8qxxaw" path="res://Player/dash_cooldown_bar.gd" id="14_oh8cp"]
+[ext_resource type="Script" uid="uid://ddtwgqnu6cvtv" path="res://Player/attack_cooldown_bar.gd" id="15_xwb51"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5qfv0"]
 atlas = ExtResource("5_ssbcy")
@@ -281,65 +281,65 @@ animations = [{
 radius = 11.0
 height = 28.0
 
-[node name="Player_Side" type="CharacterBody2D" groups=["player_side"]]
+[node name="Player_Side" type="CharacterBody2D" unique_id=134114663 groups=["player_side"]]
 collision_layer = 131
 collision_mask = 129
 script = ExtResource("1_nwayo")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1880628388]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1942101547]
 position = Vector2(-232, -125.75)
 scale = Vector2(0.96, 1.06)
 sprite_frames = SubResource("SpriteFrames_guth3")
 animation = &"5"
 script = ExtResource("6_ica5r")
 
-[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=1075800730]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_jluqp")
 animation = &"running"
 autoplay = "default"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=413627225]
 position = Vector2(0, 2)
 shape = SubResource("CapsuleShape2D_1xprf")
 
-[node name="Dash_timer" type="Timer" parent="."]
+[node name="Dash_timer" type="Timer" parent="." unique_id=1194243772]
 wait_time = 0.2
 
-[node name="Dash_cooldown" type="Timer" parent="."]
+[node name="Dash_cooldown" type="Timer" parent="." unique_id=1163888065]
 wait_time = 15.0
 
-[node name="HitboxR" type="RayCast2D" parent="."]
+[node name="HitboxR" type="RayCast2D" parent="." unique_id=840238967]
 target_position = Vector2(70, 0)
 collision_mask = 4
 collide_with_areas = true
 collide_with_bodies = false
 script = ExtResource("7_oee3r")
 
-[node name="HitboxL" type="RayCast2D" parent="."]
+[node name="HitboxL" type="RayCast2D" parent="." unique_id=1366132265]
 target_position = Vector2(-70, 0)
 collision_mask = 4
 collide_with_areas = true
 collide_with_bodies = false
 script = ExtResource("8_b6ovo")
 
-[node name="AC" type="Timer" parent="."]
+[node name="AC" type="Timer" parent="." unique_id=1769358625]
 wait_time = 0.25
 
-[node name="InteractionComponent" parent="." instance=ExtResource("9_yhub3")]
+[node name="InteractionComponent" parent="." unique_id=1295782698 instance=ExtResource("9_yhub3")]
 position = Vector2(1, 2)
 
-[node name="Damage" type="Timer" parent="."]
+[node name="Damage" type="Timer" parent="." unique_id=1600997175]
 wait_time = 0.3
 
-[node name="Coins" type="Sprite2D" parent="."]
+[node name="Coins" type="Sprite2D" parent="." unique_id=572973426]
 position = Vector2(267, -136)
 scale = Vector2(0.125556, 0.125556)
 texture = ExtResource("10_qvnvs")
 
-[node name="Coins_display" type="Label" parent="Coins"]
+[node name="Coins_display" type="Label" parent="Coins" unique_id=747465431]
 offset_left = -334.512
 offset_top = -87.6103
 offset_right = -71.5121
@@ -356,7 +356,7 @@ text = "1"
 script = ExtResource("11_00o70")
 metadata/_edit_use_anchors_ = true
 
-[node name="dash_cooldown_bar" type="TextureProgressBar" parent="."]
+[node name="dash_cooldown_bar" type="TextureProgressBar" parent="." unique_id=1026177155]
 offset_left = -268.0
 offset_top = -116.0
 offset_right = -242.0
@@ -368,7 +368,7 @@ texture_over = ExtResource("12_qno0w")
 texture_progress = ExtResource("13_pip2c")
 script = ExtResource("14_oh8cp")
 
-[node name="attack_cooldown_bar" type="ProgressBar" parent="."]
+[node name="attack_cooldown_bar" type="ProgressBar" parent="." unique_id=1570822527]
 offset_left = 16.0
 offset_top = -6.0
 offset_right = 31.0
