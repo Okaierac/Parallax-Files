@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ctx1e6q0is658"]
+
+[ext_resource type="Script" uid="uid://p74pi3f0ped5" path="res://Scenes/start.gd" id="1_1rrkq"]
+[ext_resource type="PackedScene" uid="uid://dgmv2u88lof5o" path="res://Scenes/main_menu.tscn" id="1_vieis"]
+[ext_resource type="PackedScene" uid="uid://b0rgtq401fojb" path="res://Scenes/settings.tscn" id="3_ngbw4"]
+[ext_resource type="PackedScene" uid="uid://dpdkibplo2a35" path="res://Scenes/levels.tscn" id="4_hd2e0"]
+[ext_resource type="PackedScene" uid="uid://c8tti1q6uvake" path="res://Scenes/credits.tscn" id="5_v1p2m"]
+
+[node name="Parallax" type="Node" unique_id=601458799]
+script = ExtResource("1_1rrkq")
+
+[node name="Main Menu" parent="." unique_id=1526628925 instance=ExtResource("1_vieis")]
+
+[node name="Settings" parent="." unique_id=549629146 instance=ExtResource("3_ngbw4")]
+
+[node name="Levels" parent="." unique_id=1703847287 instance=ExtResource("4_hd2e0")]
+
+[node name="World" type="Node" parent="." unique_id=411296568]
+
+[node name="Credits" parent="." unique_id=1615065354 instance=ExtResource("5_v1p2m")]
