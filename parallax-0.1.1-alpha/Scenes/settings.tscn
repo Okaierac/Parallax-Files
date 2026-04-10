@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b0rgtq401fojb"]
 
-[ext_resource type="Texture2D" uid="uid://rbfhkd7p4lhn" path="res://menu_assets/settings/images/settings_bg.png" id="1_4geyq"]
+[ext_resource type="Texture2D" uid="uid://ccqv7yuvdupbi" path="res://menu_assets/settings/images/Settings_Background.png" id="1_4geyq"]
 
 [node name="Settings" type="Node" unique_id=549629146]
 
@@ -11,15 +11,14 @@ anchor_bottom = 1.0090001
 offset_right = -0.5440674
 offset_bottom = 0.16796875
 
-[node name="bg" type="TextureRect" parent="Control" unique_id=814813852]
+[node name="bg" type="TextureRect" parent="Control" unique_id=641359658]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 1.005
-anchor_bottom = 1.0
-offset_right = 0.26000977
-offset_bottom = -3.0
+anchor_right = 1.003
+anchor_bottom = 0.98800004
+offset_right = 0.5560303
+offset_bottom = -0.15203857
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_4geyq")
-
-[node name="Camera2D" type="Camera2D" parent="Control" unique_id=1943033985]
-position = Vector2(577, 326)

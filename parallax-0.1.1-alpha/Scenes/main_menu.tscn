@@ -24,9 +24,6 @@ anchor_bottom = 16.150002
 offset_bottom = -6.1035156e-05
 texture = ExtResource("1_28flt")
 
-[node name="Camera2D" type="Camera2D" parent="Control" unique_id=1599547279]
-position = Vector2(577, 324)
-
 [node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=408852517]
 layout_mode = 1
 anchors_preset = -1
