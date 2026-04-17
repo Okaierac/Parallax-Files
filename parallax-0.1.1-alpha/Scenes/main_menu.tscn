@@ -11,29 +11,37 @@ script = ExtResource("1_n45e2")
 
 [node name="Control" type="Control" parent="." unique_id=876733239]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="bg" type="TextureRect" parent="Control" unique_id=968470402]
 texture_filter = 1
 layout_mode = 1
-anchors_preset = -1
-anchor_right = 28.800001
-anchor_bottom = 16.150002
-offset_bottom = -6.1035156e-05
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_28flt")
+
+[node name="Camera2D" type="Camera2D" parent="Control" unique_id=800345864]
+position = Vector2(575, 325)
 
 [node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=408852517]
 layout_mode = 1
-anchors_preset = -1
-anchor_right = 28.743002
-anchor_bottom = 16.129002
-offset_left = 85.0
-offset_top = 363.0
-offset_right = -994.7201
-offset_bottom = -246.16003
-scale = Vector2(4, 4)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 124.0
+offset_top = 337.0
+offset_right = -958.0
+offset_bottom = -275.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4.3708487, 4.3708487)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer" unique_id=1135611098]
 layout_mode = 2

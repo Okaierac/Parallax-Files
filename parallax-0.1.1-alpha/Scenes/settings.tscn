@@ -1,24 +1,81 @@
 [gd_scene format=3 uid="uid://b0rgtq401fojb"]
 
 [ext_resource type="Texture2D" uid="uid://ccqv7yuvdupbi" path="res://menu_assets/settings/images/Settings_Background.png" id="1_4geyq"]
+[ext_resource type="Script" uid="uid://dcnltkeuccmuu" path="res://menu_assets/settings/script/settings.gd" id="1_lhmql"]
+[ext_resource type="Texture2D" uid="uid://dyryn7hbc0bo7" path="res://menu_assets/settings/images/Go Back.png" id="2_i44u3"]
 
 [node name="Settings" type="Node" unique_id=549629146]
+script = ExtResource("1_lhmql")
 
 [node name="Control" type="Control" parent="." unique_id=1053712248]
 layout_mode = 3
-anchor_right = 0.99700004
-anchor_bottom = 1.0090001
-offset_right = -0.5440674
-offset_bottom = 0.16796875
+anchor_right = 1.0
+anchor_bottom = 1.0
 
 [node name="bg" type="TextureRect" parent="Control" unique_id=641359658]
 texture_filter = 1
 layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.003
-anchor_bottom = 0.98800004
-offset_right = 0.5560303
-offset_bottom = -0.15203857
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_4geyq")
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=218889377]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 79.0
+offset_top = 193.0
+offset_right = -677.0
+offset_bottom = -369.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer" unique_id=786765318]
+layout_mode = 2
+
+[node name="Volume" type="HSlider" parent="Control/MarginContainer/VBoxContainer" unique_id=131088149]
+layout_mode = 2
+
+[node name="Mute" type="CheckBox" parent="Control/MarginContainer/VBoxContainer" unique_id=2012394348]
+layout_mode = 2
+text = "Mute Music/Sound"
+language = "en_CA"
+
+[node name="Resolutions" type="OptionButton" parent="Control/MarginContainer/VBoxContainer" unique_id=689724447]
+layout_mode = 2
+item_count = 2
+popup/item_0/text = "Fullscreen"
+popup/item_0/id = 0
+popup/item_1/text = "Windowed"
+popup/item_1/id = 1
+
+[node name="MarginContainer_GoBack" type="MarginContainer" parent="Control" unique_id=1344347959]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.026
+anchor_top = 0.89500004
+anchor_right = 0.17300001
+anchor_bottom = 0.9480001
+offset_left = 0.048000336
+offset_top = 0.039978027
+offset_right = -125.296005
+offset_bottom = -25.304077
+grow_vertical = 0
+scale = Vector2(3.8400006, 3.8400006)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer_GoBack" unique_id=1887497415]
+layout_mode = 2
+
+[node name="Go Back" type="TextureButton" parent="Control/MarginContainer_GoBack/VBoxContainer" unique_id=2102063201]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("2_i44u3")
+
+[connection signal="value_changed" from="Control/MarginContainer/VBoxContainer/Volume" to="." method="_on_volume_value_changed"]
+[connection signal="toggled" from="Control/MarginContainer/VBoxContainer/Mute" to="." method="_on_mute_toggled"]
+[connection signal="item_selected" from="Control/MarginContainer/VBoxContainer/Resolutions" to="." method="_on_resolutions_item_selected"]
+[connection signal="pressed" from="Control/MarginContainer_GoBack/VBoxContainer/Go Back" to="." method="_on_go_back_pressed"]
