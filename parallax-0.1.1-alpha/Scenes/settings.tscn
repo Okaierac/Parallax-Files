@@ -48,6 +48,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Volume Slider"
 
 [node name="Volume" type="HSlider" parent="Control/MarginContainer/VBoxContainer" unique_id=131088149]
+texture_filter = 1
 layout_mode = 2
 
 [node name="Mute" type="CheckBox" parent="Control/MarginContainer/VBoxContainer" unique_id=2012394348]
@@ -69,6 +70,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Display Mode"
 
 [node name="Display Mode" type="OptionButton" parent="Control/MarginContainer/VBoxContainer" unique_id=689724447]
+texture_filter = 1
 layout_mode = 2
 item_count = 2
 popup/item_0/text = "Fullscreen"
