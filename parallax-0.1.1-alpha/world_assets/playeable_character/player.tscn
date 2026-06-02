@@ -11,10 +11,13 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_lvvv5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gjmg7")
 }],
 "loop": true,
 "name": &"default",
-"speed": 5.0
+"speed": 0.7
 }, {
 "frames": [{
 "duration": 1.0,
@@ -47,8 +50,8 @@ texture_filter = 1
 position = Vector2(0, -5.9604645e-08)
 scale = Vector2(0.13140245, 0.13140246)
 sprite_frames = SubResource("SpriteFrames_b4y0h")
-animation = &"running"
 autoplay = "default"
+frame_progress = 0.98507565
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1770611765]
 shape = SubResource("CapsuleShape2D_lvvv5")
