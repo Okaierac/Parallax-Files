@@ -1,3 +1,71 @@
 [gd_scene format=3 uid="uid://dpdkibplo2a35"]
 
+[ext_resource type="Script" uid="uid://di1uf5iv24yy4" path="res://menu_assets/scene_assets/level_selection/script/levels.gd" id="1_uusmb"]
+[ext_resource type="Texture2D" uid="uid://ccqv7yuvdupbi" path="res://menu_assets/generic_assets/blank_background/Blank_Background.png" id="1_xgx5e"]
+[ext_resource type="Texture2D" uid="uid://dyryn7hbc0bo7" path="res://menu_assets/generic_assets/go-back_button/Go Back.png" id="2_uusmb"]
+[ext_resource type="Texture2D" uid="uid://bk84udwc2y33t" path="res://menu_assets/scene_assets/level_selection/buttons/First Level-Button.png" id="4_3akqy"]
+
 [node name="Levels" type="Node" unique_id=1703847287]
+script = ExtResource("1_uusmb")
+
+[node name="Control" type="Control" parent="." unique_id=905733736]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="bg" type="TextureRect" parent="Control" unique_id=212679414]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_xgx5e")
+
+[node name="MarginContainer_GoBack" type="MarginContainer" parent="Control" unique_id=1851370693]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.026
+anchor_top = 0.89500004
+anchor_right = 0.17300001
+anchor_bottom = 0.9480001
+offset_left = 0.048000336
+offset_top = 0.039978027
+offset_right = -125.296005
+offset_bottom = -25.304077
+grow_vertical = 0
+scale = Vector2(3.8400006, 3.8400006)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer_GoBack" unique_id=833814395]
+layout_mode = 2
+
+[node name="Go Back" type="TextureButton" parent="Control/MarginContainer_GoBack/VBoxContainer" unique_id=1216634112]
+texture_filter = 1
+layout_mode = 2
+texture_normal = ExtResource("2_uusmb")
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=2050674635]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.082
+anchor_bottom = 0.14400001
+offset_left = 71.00003
+offset_top = 182.00003
+offset_right = 71.536026
+offset_bottom = 181.68802
+scale = Vector2(2.724554, 2.724554)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer" unique_id=1625411434]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="Control/MarginContainer/HBoxContainer" unique_id=549135570]
+layout_mode = 2
+texture_normal = ExtResource("4_3akqy")
+
+[connection signal="pressed" from="Control/MarginContainer_GoBack/VBoxContainer/Go Back" to="." method="_on_go_back_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/HBoxContainer/TextureButton" to="." method="_on_texture_button_pressed"]

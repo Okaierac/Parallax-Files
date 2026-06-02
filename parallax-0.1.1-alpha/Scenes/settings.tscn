@@ -1,16 +1,19 @@
 [gd_scene format=3 uid="uid://b0rgtq401fojb"]
 
-[ext_resource type="Texture2D" uid="uid://ccqv7yuvdupbi" path="res://menu_assets/settings/images/Settings_Background.png" id="1_4geyq"]
-[ext_resource type="Script" uid="uid://dcnltkeuccmuu" path="res://menu_assets/settings/script/settings.gd" id="1_lhmql"]
-[ext_resource type="Texture2D" uid="uid://dyryn7hbc0bo7" path="res://menu_assets/settings/images/Go Back.png" id="2_i44u3"]
+[ext_resource type="Texture2D" uid="uid://ccqv7yuvdupbi" path="res://menu_assets/generic_assets/blank_background/Blank_Background.png" id="1_4geyq"]
+[ext_resource type="Script" uid="uid://dcnltkeuccmuu" path="res://menu_assets/scene_assets/settings/script/settings.gd" id="1_lhmql"]
+[ext_resource type="Texture2D" uid="uid://dyryn7hbc0bo7" path="res://menu_assets/generic_assets/go-back_button/Go Back.png" id="2_i44u3"]
 
 [node name="Settings" type="Node" unique_id=549629146]
 script = ExtResource("1_lhmql")
 
 [node name="Control" type="Control" parent="." unique_id=1053712248]
 layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="bg" type="TextureRect" parent="Control" unique_id=641359658]
 texture_filter = 1
@@ -27,25 +30,45 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 79.0
-offset_top = 193.0
-offset_right = -677.0
-offset_bottom = -369.0
+offset_left = 130.0
+offset_top = 79.000015
+offset_right = -626.0
+offset_bottom = -483.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.6800009, 1.6800009)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer" unique_id=786765318]
 layout_mode = 2
+
+[node name="Volume Label" type="Label" parent="Control/MarginContainer/VBoxContainer" unique_id=1546365241]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Volume Slider"
 
 [node name="Volume" type="HSlider" parent="Control/MarginContainer/VBoxContainer" unique_id=131088149]
 layout_mode = 2
 
 [node name="Mute" type="CheckBox" parent="Control/MarginContainer/VBoxContainer" unique_id=2012394348]
+texture_filter = 1
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.22745098, 0.22745098, 0.22745098, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.22745098, 0.22745098, 0.22745098, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 text = "Mute Music/Sound"
 language = "en_CA"
 
-[node name="Resolutions" type="OptionButton" parent="Control/MarginContainer/VBoxContainer" unique_id=689724447]
+[node name="Display-Mode Label" type="Label" parent="Control/MarginContainer/VBoxContainer" unique_id=1222170969]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Display Mode"
+
+[node name="Display Mode" type="OptionButton" parent="Control/MarginContainer/VBoxContainer" unique_id=689724447]
 layout_mode = 2
 item_count = 2
 popup/item_0/text = "Fullscreen"
@@ -77,5 +100,5 @@ texture_normal = ExtResource("2_i44u3")
 
 [connection signal="value_changed" from="Control/MarginContainer/VBoxContainer/Volume" to="." method="_on_volume_value_changed"]
 [connection signal="toggled" from="Control/MarginContainer/VBoxContainer/Mute" to="." method="_on_mute_toggled"]
-[connection signal="item_selected" from="Control/MarginContainer/VBoxContainer/Resolutions" to="." method="_on_resolutions_item_selected"]
+[connection signal="item_selected" from="Control/MarginContainer/VBoxContainer/Display Mode" to="." method="_on_resolutions_item_selected"]
 [connection signal="pressed" from="Control/MarginContainer_GoBack/VBoxContainer/Go Back" to="." method="_on_go_back_pressed"]

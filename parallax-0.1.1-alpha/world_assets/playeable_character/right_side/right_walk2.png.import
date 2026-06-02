@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyryn7hbc0bo7"
-path="res://.godot/imported/Go Back.png-36d7513b65673bf14c767c9939a9474e.ctex"
+uid="uid://b1jleb4dn5s6h"
+path="res://.godot/imported/right_walk2.png-826ce1d85c97eb14d7de59922894d97d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://menu_assets/settings/images/Go Back.png"
-dest_files=["res://.godot/imported/Go Back.png-36d7513b65673bf14c767c9939a9474e.ctex"]
+source_file="res://world_assets/playeable_character/right_side/right_walk2.png"
+dest_files=["res://.godot/imported/right_walk2.png-826ce1d85c97eb14d7de59922894d97d.ctex"]
 
 [params]
 

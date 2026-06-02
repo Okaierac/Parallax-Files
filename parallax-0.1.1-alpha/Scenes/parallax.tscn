@@ -4,17 +4,20 @@
 [ext_resource type="PackedScene" uid="uid://dgmv2u88lof5o" path="res://Scenes/main_menu.tscn" id="1_vieis"]
 [ext_resource type="PackedScene" uid="uid://b0rgtq401fojb" path="res://Scenes/settings.tscn" id="3_ngbw4"]
 [ext_resource type="PackedScene" uid="uid://dpdkibplo2a35" path="res://Scenes/levels.tscn" id="4_hd2e0"]
+[ext_resource type="PackedScene" uid="uid://cugfbyk7sh1wj" path="res://Scenes/first_level.tscn" id="5_ngbw4"]
 [ext_resource type="PackedScene" uid="uid://c8tti1q6uvake" path="res://Scenes/credits.tscn" id="5_v1p2m"]
 
 [node name="Parallax" type="Node" unique_id=601458799]
 script = ExtResource("1_1rrkq")
 
-[node name="Main Menu" parent="." unique_id=1526628925 instance=ExtResource("1_vieis")]
+[node name="Credits" parent="." unique_id=1615065354 instance=ExtResource("5_v1p2m")]
 
-[node name="Settings" parent="." unique_id=549629146 instance=ExtResource("3_ngbw4")]
+[node name="World" type="Node" parent="." unique_id=1328394459]
+
+[node name="First Level" parent="World" unique_id=781679807 instance=ExtResource("5_ngbw4")]
 
 [node name="Levels" parent="." unique_id=1703847287 instance=ExtResource("4_hd2e0")]
 
-[node name="World" type="Node" parent="." unique_id=411296568]
+[node name="Settings" parent="." unique_id=549629146 instance=ExtResource("3_ngbw4")]
 
-[node name="Credits" parent="." unique_id=1615065354 instance=ExtResource("5_v1p2m")]
+[node name="Main Menu" parent="." unique_id=1526628925 instance=ExtResource("1_vieis")]
